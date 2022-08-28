@@ -40,7 +40,7 @@ client.on('qr', qr => {
 });
 
 client.on('ready', () => {
-    console.log('Client is ready!');
+    console.log('Client is ready!!');
 });
 
 client.on('message', message => {
