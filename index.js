@@ -6,7 +6,11 @@ const { Client } = require('whatsapp-web.js');
 let qrCode = null
 
 // Use the saved values
-const client = new Client();
+const client = new Client({
+    puppeteer: {
+        args: ['--no-sandbox'],
+    }
+});
 
 const app = express();
 
